@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 
-class Index extends Component {
+class Management extends Component {
     render() {
         return (
             <div>
-                
+                Management Page
             </div>
         );
     }
 }
 
-export default Index;
+export default Management;

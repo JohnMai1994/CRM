@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 
-class Hi extends Component {
+class Project extends Component {
     render() {
         return (
             <div>
-                Umi Work, Say Hello World!!!
+                Project page
             </div>
         );
     }
 }
 
-export default Hi;
+export default Project;

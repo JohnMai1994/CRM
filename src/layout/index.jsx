@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import {Layout} from 'antd'
 // ！！！没有导入logo
-
+import logo from "../static/cuc_logo/logo.png"
 // ！！！没有获取menu数据
-
+import {getMenuData} from "../static/staticMenu/menu";
 // ！！！没有写小组件
+import SiderMenu from "../components/SiderMenu";
 
 const {Sider, Content, Header} = Layout
 
@@ -17,17 +18,25 @@ class BasicLayout extends Component {
         }
     }
 
+    handleMenuCollapse = () => {
+        this.setState({
+            collapsed: !this.state.collapsed,
+        })
+    }
+
 
     render() {
         const {children, location} = this.props
-        console.log(children, location)
         const {collapsed} = this.state
 
         return (
-            <Layout>
-                <Sider>
-                    Sider 菜单部分（需要封装小组件）
-                </Sider>
+            <Layout >
+                <SiderMenu
+                    logo={logo}
+                    collapsed={collapsed}
+                    menuData={getMenuData()}
+                    location={location}
+                />
                 <Layout>
                     <Header style={{background: '#fff', textAlign: 'center', padding: 0}}>
                         Header
