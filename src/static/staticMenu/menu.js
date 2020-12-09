@@ -1,3 +1,5 @@
+import { ContactIcon, SettingIcon, MessageIcon, CalendarIcon, DashboardIcon, FinanceIcon, ManagementIcon, PersonnelIcon, ProjectIcon} from "../staticIcon"
+
 const reg = /(((^https?:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)$/g;
 
 export function isUrl(path) {
@@ -7,33 +9,48 @@ export function isUrl(path) {
 const menuData = [
     {
         name: "Dashboard",
-        icon: "dashboard",
+        icon: DashboardIcon,
         path: "dashboard",
     },
     {
         name: "Contact",
-        icon: "contact",
+        icon: ContactIcon,
         path: "contact",
     },
     {
         name: "Personnel",
-        icon: "personnel",
+        icon: PersonnelIcon,
         path: "personnel",
     },
     {
         name: "Project",
-        icon: "project",
+        icon: ProjectIcon,
         path: "project",
     },
     {
         name: "Management",
-        icon: "management",
+        icon: ManagementIcon,
         path: "management",
     },
     {
         name: "Finance",
-        icon: "finance",
+        icon: FinanceIcon,
         path: "finance",
+    },
+    {
+        name: "Calendar",
+        icon: CalendarIcon,
+        path: "calendar"
+    },
+    {
+        name: "Message",
+        icon: MessageIcon,
+        path: "message"
+    },
+    {
+        name: "Setting",
+        icon: SettingIcon,
+        path: "setting"
     },
 ]
 
