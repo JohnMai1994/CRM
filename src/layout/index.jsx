@@ -7,6 +7,7 @@ import {getMenuData} from "../static/staticMenu/menu";
 
 // ！！！没有写小组件
 import SiderMenu from "../components/SiderMenu";
+import GlobalHeader from "../components/GlobalHeader"
 
 const {Sider, Content, Header} = Layout
 
@@ -37,14 +38,15 @@ class BasicLayout extends Component {
                     logo={logo}
                     collapsed={collapsed}
                     menuData={getMenuData()}
-
                     location={location}
                 />
 
                 <Layout>
-                    <Header style={{background: '#fff', textAlign: 'center', padding: 0}}>
-                        Header
-                    </Header>
+
+                    <GlobalHeader collapsed={collapsed} onCollapse={this.handleMenuCollapse}/>
+                    {/*<Header style={{background: '#fff', textAlign: 'center', padding: 0}}>*/}
+                    {/*    Header*/}
+                    {/*</Header>*/}
                     <Content>
                         <div style={{padding: 24, background: '#fff', minHeight: 360}}>
                             {children}

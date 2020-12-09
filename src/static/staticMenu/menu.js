@@ -1,4 +1,15 @@
-import { ContactIcon, SettingIcon, MessageIcon, CalendarIcon, DashboardIcon, FinanceIcon, ManagementIcon, PersonnelIcon, ProjectIcon} from "../staticIcon"
+import {
+    DashboardOutlined,
+    TeamOutlined,
+    CarOutlined,
+    FolderOpenOutlined,
+    LaptopOutlined,
+    MoneyCollectOutlined,
+    CalendarOutlined,
+    SettingOutlined,
+    MessageOutlined
+} from '@ant-design/icons';
+
 
 const reg = /(((^https?:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)$/g;
 
@@ -9,54 +20,54 @@ export function isUrl(path) {
 const menuData = [
     {
         name: "Dashboard",
-        icon: DashboardIcon,
+        icon: DashboardOutlined,
         path: "dashboard",
     },
     {
         name: "Contact",
-        icon: ContactIcon,
+        icon: TeamOutlined,
         path: "contact",
     },
     {
         name: "Personnel",
-        icon: PersonnelIcon,
+        icon: CarOutlined,
         path: "personnel",
     },
     {
         name: "Project",
-        icon: ProjectIcon,
+        icon: FolderOpenOutlined,
         path: "project",
     },
     {
         name: "Management",
-        icon: ManagementIcon,
+        icon: LaptopOutlined,
         path: "management",
     },
     {
         name: "Finance",
-        icon: FinanceIcon,
+        icon: MoneyCollectOutlined,
         path: "finance",
     },
     {
         name: "Calendar",
-        icon: CalendarIcon,
+        icon: CalendarOutlined,
         path: "calendar"
     },
     {
         name: "Message",
-        icon: MessageIcon,
+        icon: MessageOutlined,
         path: "message"
     },
     {
         name: "Setting",
-        icon: SettingIcon,
+        icon: SettingOutlined,
         path: "setting"
     },
 ]
 
 function formatter(data, parentPath = "/") {
     return data.map(item => {
-        let {path } = item;
+        let {path} = item;
 
 
         // 当使用真实后端的api时候用到

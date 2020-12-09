@@ -3,7 +3,6 @@ import {Link} from "umi"
 import {Layout, Menu, Button} from "antd";
 import style from "./index.less"
 // 导入Icon以后删掉
-import {DashboardIcon, ContactIcon, PersonnelIcon, MessageIcon} from "../../static/staticIcon"
 
 const {Sider} = Layout
 const {Item} = Menu
@@ -56,7 +55,6 @@ class SiderMenu extends Component {
                 collapsible
                 collapsed={collapsed}
                 breakpoint={"lg"}
-                collapsedWidth={0}
                 width={256}
                 className={style.sider}
             >
@@ -68,17 +66,16 @@ class SiderMenu extends Component {
                 </div>
 
                 {/*这是Menu Bar的使用数据组装，*/}
-                {/*<Menu*/}
-                {/*    key="Menu"*/}
-                {/*    theme="light"*/}
-                {/*    mode="inline"*/}
-                {/*    style={{padding: '16px 0', width: '100%'}}*/}
-                {/*>*/}
-                {/*    {this.getNavMenuItems(this.menus)}*/}
-                {/*</Menu>*/}
+                <Menu
+                    key="Menu"
+                    theme="light"
+                    mode="inline"
+                    style={{padding: '16px 0', width: '100%'}}
+                >
+                    {this.getNavMenuItems(this.menus)}
+                </Menu>
 
 
-                {/* 模块测试， 失败了*/}
                 {/* 模块测试， 失败了*/}
                 {/*<Menu key="Menu" theme="light" mode="inline" >*/}
                 {/*    <Item key="Dashboard" icon={<DashboardIcon icontype={0}/>}>Dashboard</Item>*/}
