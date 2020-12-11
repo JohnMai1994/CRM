@@ -4,6 +4,7 @@ export default {
         //dark: true, // 开启暗色主题
        // compact: true, // 开启紧凑主题
     },
+
     routes: [
         // 这是初始化项目：Hello World
         {

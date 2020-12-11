@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import {Spin, Dropdown, Menu, Avatar} from "antd"
-import {UserOutlined, LoadingOutlined, SettingOutlined, CloseCircleOutlined, LogoutOutlined} from '@ant-design/icons';
+import {Button} from "antd"
+import zhCN from 'antd/lib/locale/zh_CN';
+import {} from '@ant-design/icons';
 import style from "./index.less"
 
 
@@ -9,32 +10,23 @@ import CollapsedButton from "./CollapsedButton";
 import Question from "./Question";
 import Search from "./Search";
 import User from "./User";
-import Image from "antd/es/image";
+import TranslationButton from "./TranslationButton";
 
 class GlobalHeader extends Component {
     constructor(props) {
         super(props);
         this.state = {
 
-            // ----------- 用户component ----------------
-
-            // ------------------------------------------
-
         }
     }
-
-
-    // --------------这部分用于用户Component的，之后记得分割-----------------
-
-
-    // -----------------------------------------------
-
 
     render() {
         const {
             collapsed,
             currentUser = {},
             onCollapse,
+            language,
+            changeLanguage
         } = this.props
 
 
@@ -47,17 +39,12 @@ class GlobalHeader extends Component {
                 <div className={style.right}>
                     {/* 1. 搜索*/}
                     <Search/>
-
                     {/* 2. Question API后端接口*/}
                     <Question/>
-
                     {/* 3. 头像 个人中心 设置 登录登出  */}
-
                     <User currentUser={currentUser}/>
-
-
                     {/* 4. 中英文转换按钮  */}
-
+                    <TranslationButton language={language} changeLanguage={changeLanguage}/>
                 </div>
 
 
