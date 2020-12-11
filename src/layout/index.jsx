@@ -43,7 +43,16 @@ class BasicLayout extends Component {
 
                 <Layout>
 
-                    <GlobalHeader collapsed={collapsed} onCollapse={this.handleMenuCollapse}/>
+                    <GlobalHeader
+                        collapsed={collapsed}
+                        onCollapse={this.handleMenuCollapse}
+                        currentUser={{
+                            name: 'Johnny',
+                            avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+                            userid: '00000001',
+                            notifyCount: 12,
+                        }}
+                    />
                     {/*<Header style={{background: '#fff', textAlign: 'center', padding: 0}}>*/}
                     {/*    Header*/}
                     {/*</Header>*/}

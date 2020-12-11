@@ -18,6 +18,7 @@
     "@ant-design/icons": "^4.3.0",
     "@umijs/preset-react": "^1.7.6",
     "antd": "^4.9.1",
+    "classnames": "^2.2.6",
     "dva": "^2.4.1"
   }
 }

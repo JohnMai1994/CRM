@@ -11,14 +11,95 @@
 
 
 .trigger {
+  // font-size和line-height是用来控制 图标大小的
   font-size: 20px;
-  line-height: 64px;//
-  cursor: pointer;  // 鼠标移动到光标上显示 pointer
-  transition: all 0.3s, padding 0s;
+  line-height: 64px;
+  // 鼠标移动到光标上显示 pointer
+  cursor: pointer;
+
+  //transition: all 0.3s,
+  transition: background-color 1s, padding 0s;;
   padding: 0 24px;
   color: #577BF9;
   &:hover{
     background: @primary-1;
+  }
+}
+
+
+.right {
+  float: right;
+  height: 100%;
+
+  .action{
+    cursor: pointer;
+    padding: 0 16px;
+    display: inline-block;
+    transition: all 1s;
+    height: 100%;
+    > span {
+      font-size: 16px;
+      line-height: 64px;
+      vertical-align: middle;
+      color: #577BF9;
+    }
+    &:hover{
+      //color: #577BF9;
+      background: @primary-1;
+    }
+  }
+
+  .search {
+    padding: 0 16px;
+    margin: 0;
+
+    .input{
+      transition: width 0.5s, margin-left 0.3s;
+      width:0;
+      background: @primary-1;
+      border-radius: 3px;
+
+      :global(.ant-select-selection) {
+        background: transparent;
+      }
+      input{
+        border: 0;
+        padding-left: 0;
+        padding-right: 0;
+        box-shadow: 0 2px 0 0 rgba(87,123 ,249, 0.2) !important;
+        background-color: transparent;
+      }
+
+      &,
+      &:hover,
+      &:focus {
+        border-bottom: 0.5px solid #577BF9;
+      }
+      &.show{
+        width: 210px;
+        margin-left: 8px;
+        background-color: transparent;
+
+      }
+    }
+  }
+
+  .account {
+    .avatar{
+      padding: 0;
+      margin: 20px 8px 20px 0;
+      color: #577BF9;
+      vertical-align: middle;
+
+    }
+
+  }
+
+
+  .spin {
+
+
+
   }
 
 }
