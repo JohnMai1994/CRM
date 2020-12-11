@@ -6,7 +6,6 @@ import enGB from 'antd/lib/locale/en_GB'
 import logo from "../static/cuc_logo/logo.png"
 // ！！！没有获取menu数据
 import {getMenuData} from "../static/staticMenu/menu";
-
 // ！！！没有写小组件
 import SiderMenu from "../components/SiderMenu";
 import GlobalHeader from "../components/GlobalHeader"
