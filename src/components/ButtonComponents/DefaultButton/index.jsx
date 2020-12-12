@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import style from "./index.less"
 
+
+// 需要传入变量 icon(icon是svg，从static中找) && words
 class DefaultButton extends Component {
 
     constructor(props) {

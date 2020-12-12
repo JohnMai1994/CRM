@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
 import style from "./index.less"
 
+
+// 需要传入变量 icon(从antd Icon中获取) 和 words
 class SmallButton extends Component {
     constructor(props) {
         super(props);
     }
-
 
     render() {
         const {
