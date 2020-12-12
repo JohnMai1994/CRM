@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import style from "./index.less"
 
 class SmallButton extends Component {
     constructor(props) {
@@ -7,10 +8,21 @@ class SmallButton extends Component {
 
 
     render() {
-        return (
-            <div>
+        const {
+            icon,
+            words
+        } = this.props;
 
-            </div>
+
+        return (
+            <button className={style.action}>
+                <span className={style.icon}>
+                     {icon}
+                </span>
+                <span className={style.word}>
+                    {words}
+                </span>
+            </button>
         );
     }
 }

@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
 import {ContactIcon, ProjectIcon, PersonnelIcon, ManagementIcon, FinanceIcon, DashboardIcon} from "../../static/staticIcon"
 import DefaultButton from "../../components/ButtonComponents/DefaultButton";
-import searchIcon from "../../static/cuc_logo/icon_search/primary/small.svg"
+import SmallButton from "../../components/ButtonComponents/SmallButton";
 
+// Icon
+import searchIcon from "../../static/cuc_logo/icon_search/primary/small.svg"
+import {DeleteOutlined } from '@ant-design/icons';
 
 class HelloWorld extends Component {
     render() {
@@ -19,7 +22,7 @@ class HelloWorld extends Component {
 
                 <div>
                     <DefaultButton words="Search" icon={searchIcon} method={() => console.log("Hello World")}/>
-
+                    <SmallButton words="Delete" icon={<DeleteOutlined style={{color:"#666666", fontSize:"16px"}}/>}/>
 
                 </div>
 
