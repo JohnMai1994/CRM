@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import {ContactIcon, ProjectIcon, PersonnelIcon, ManagementIcon, FinanceIcon, DashboardIcon} from "../../static/staticIcon"
+import DefaultButton from "../../components/ButtonComponents/DefaultButton";
+import searchIcon from "../../static/cuc_logo/icon_search/primary/small.svg"
+
 
 class HelloWorld extends Component {
     render() {
@@ -13,7 +16,18 @@ class HelloWorld extends Component {
                 <ManagementIcon icontype={0}/>
                 <FinanceIcon icontype={1}/>
                 <DashboardIcon icontype={0}/>
+
+                <div>
+                    <DefaultButton words="Search" icon={searchIcon} method={() => console.log("Hello World")}/>
+
+
+                </div>
+
+
             </div>
+
+
+
         );
     }
 }

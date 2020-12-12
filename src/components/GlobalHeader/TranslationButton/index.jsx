@@ -16,7 +16,7 @@ class TranslationButton extends Component {
 
         return (
             <Button className={`${style.action} ${style.language}`} onClick={this.toggle}>
-                {language === zhCN ? "Chinese" : "English"}
+                {language === zhCN ? "CH" : "EN"}
             </Button>
         );
     }

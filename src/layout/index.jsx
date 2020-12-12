@@ -76,7 +76,7 @@ class BasicLayout extends Component {
                         {/*    Header*/}
                         {/*</Header>*/}
                         <Content>
-                            <div style={{padding: 24, background: '#fff', minHeight: 360}}>
+                            <div style={{minHeight: "100%"}}>
                                 {children}
                             </div>
                         </Content>
